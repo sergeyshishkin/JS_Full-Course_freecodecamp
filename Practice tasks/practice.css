@@ -1,0 +1,20 @@
+div {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 0.1em;
+  margin: auto;
+  margin-top: 4px;
+  text-align: center;
+}
+
+#apple-shelf {
+  background-color: rgb(236, 145, 145);
+  border-color: red;
+}
+
+#orange-shelf {
+  background-color: rgb(233, 187, 101);
+  border-color: rgb(189, 123, 0);
+}
