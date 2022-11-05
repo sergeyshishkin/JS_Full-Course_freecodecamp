@@ -10,10 +10,22 @@
   <body>
     <h1>Blackjack game!</h1>
     <p id="message-el">Want to play around?</p>
-    <p>Cards:</p>
-    <p>Sum:</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum:</p>
+    <button id="top-up" style="display: none" onclick="rickAstley()">
+      TOP UP
+    </button>
+    <img
+      src="/Blackjack app/rick.jpg"
+      alt="rick"
+      width="500"
+      height="300"
+      style="display: none"
+      id="rick-astley"
+    />
     <button id="start-game" onclick="startGame()">START GAME</button>
-    <p id="current-hand"></p>
+    <button id="new-card" onclick="newCard()">NEW CARD</button>
+    <p id="player-el"></p>
     <script src="blackjack.js"></script>
   </body>
 </html>

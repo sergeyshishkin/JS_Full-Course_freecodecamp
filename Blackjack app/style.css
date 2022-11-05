@@ -1,12 +1,15 @@
+body {
+  text-align: center;
+  font-weight: bold;
+}
+
 h1 {
   font-size: 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
 }
 
 p {
-  font-weight: bold;
   font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -15,4 +18,14 @@ p {
 #current-hand {
   font-size: 30px;
   color: blue;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-bottom: 6px;
 }
