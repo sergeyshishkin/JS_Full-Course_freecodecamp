@@ -18,7 +18,7 @@ let newCardBtn = document.getElementById("new-card");
 
 function updateChips() {
   if (player.chips <= 0) {
-    playerEl.textContent = `Dear ${player.name}, your balance is $${player.chips}. Please, top up you account to continue playing`;
+    playerEl.textContent = `Dear ${player.name}, your balance is $ ${player.chips}. Please, top up you account to continue playing`;
     document.getElementById("top-up").style.display = "block";
     document.getElementById("start-game").style.display = "none";
     document.getElementById("new-card").style.display = "none";
