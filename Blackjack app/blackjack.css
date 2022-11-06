@@ -29,3 +29,8 @@ button {
   margin: auto;
   margin-bottom: 6px;
 }
+
+img {
+  display: block;
+  margin: auto;
+}
