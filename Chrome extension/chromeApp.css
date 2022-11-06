@@ -16,7 +16,7 @@ button {
   margin-top: 5px;
   background-color: #5f9341;
   padding: 10px 25px;
-  border: none;
+  border: 1px solid #5f9341;
   color: white;
   font-weight: bold;
 }
@@ -26,12 +26,9 @@ button:hover {
   background-color: #8aad75;
 }
 
-#buy-btn {
-  background-color: red;
-}
-
-#buy-btn:hover {
-  background-color: rgb(224, 131, 131);
+#delete-btn {
+  background-color: white;
+  color: #5f9341;
 }
 
 ul {

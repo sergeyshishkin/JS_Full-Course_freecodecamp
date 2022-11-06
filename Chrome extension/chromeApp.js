@@ -1,28 +1,46 @@
-let myleads = [];
+let myLeads = [];
 
 const inputEl = document.getElementById("input-el");
 const saveBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
+const deleteBtn = document.getElementById("delete-btn");
+const tabBtn = document.getElementById("tab-btn");
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
-//localStorage.setItem("myLeads", "www.leads.com");
-//let testValue = localStorage.getItem("myLeads");
-//console.log(testValue);
-localStorage.clear();
+if (leadsFromLocalStorage) {
+  myLeads = leadsFromLocalStorage;
+  render(myLeads);
+}
 
-saveBtn.addEventListener("click", function () {
-  myleads.push(inputEl.value);
-  inputEl.value = "";
-  localStorage.setItem("myLeads", JSON.stringify(myleads));
-  renderLeads();
-
-  console.log(localStorage.getItem("myLeads"));
-});
-
-function renderLeads() {
+function render(leads) {
   let listItmes = "";
 
-  for (let i = 0; i < myleads.length; i++) {
-    listItmes += `<li><a href="http://${myleads[i]}" target="_blank">${myleads[i]}</a></li>`;
+  for (let i = 0; i < leads.length; i++) {
+    listItmes += `<li><a href="http://${leads[i]}" target="_blank">${leads[i]}</a></li>`;
   }
   ulEl.innerHTML = listItmes;
 }
+
+deleteBtn.addEventListener("dblclick", function () {
+  localStorage.clear();
+  myLeads = [];
+  render(myLeads);
+  // ulEl.innerHTML = "";
+});
+
+saveBtn.addEventListener("click", function () {
+  myLeads.push(inputEl.value);
+  inputEl.value = "";
+  localStorage.setItem("myLeads", JSON.stringify(myLeads));
+  render(myLeads);
+
+  //console.log(localStorage.getItem("myLeads"));
+});
+
+tabBtn.addEventListener("click", function () {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    myLeads.push(tabs[0].url);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
+  });
+});
