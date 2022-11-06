@@ -6,5 +6,5 @@
     "default_popup": "chromeApp.html",
     "default_icon": "coin.png"
   },
-  "permission": ["tabs"]
+  "permissions": ["tabs"]
 }
