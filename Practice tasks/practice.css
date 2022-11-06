@@ -1,3 +1,4 @@
+/*
 div {
   width: 200px;
   height: 50px;
@@ -17,4 +18,26 @@ div {
 #orange-shelf {
   background-color: rgb(233, 187, 101);
   border-color: rgb(189, 123, 0);
+}
+
+#score {
+  background-color: rgb(54, 54, 223);
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+#score:hover {
+  background-color: rgb(96, 96, 240);
+}
+*/
+#container {
+  width: 100%;
+}
+
+img {
+  width: 100px;
+  border-radius: 100%;
+  margin: 10px;
 }

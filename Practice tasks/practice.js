@@ -33,7 +33,7 @@ if (age < 6) {
 }
 */
 // Task 3 - Array practice
-
+/*
 let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
 largeCountries.shift();
 largeCountries.unshift("China");
@@ -43,7 +43,7 @@ largeCountries.push("Pakistan");
 for (let i = 0; i < largeCountries.length; i++) {
   output.innerHTML += `${largeCountries[i]}<br>`;
 }
-
+*/
 /*
 // Task 4 - Logical opearators practice
 let dayOfMonth = 13;
@@ -89,4 +89,56 @@ function sortFruits() {
 
 sortFruits();
 
+*/
+
+// Task 7 - Event listener practice
+/*
+const scoreBtn = document.getElementById("score");
+
+/*
+let data = [
+  {
+    player: "Jane",
+    score: 52,
+  },
+  {
+    player: "Mark",
+    score: 41,
+  },
+];
+
+scoreBtn.addEventListener("click", function () {
+  scoreBtn.textContent = data[0].score;
+});
+
+*/
+
+// Task 8 - Template string practice
+/*
+function generateSentence(desc, arr) {
+  let baseString = `The ${arr.length} ${desc} are `;
+  const lastIndex = arr.length - 1;
+  for (let i = 0; i < arr.length; i++) {
+    if (i == lastIndex) {
+      baseString += arr[i];
+    } else {
+      baseString += arr[i] + ", ";
+    }
+  }
+
+  return baseString;
+}
+
+console.log(generateSentence("largest countries", ["China", "India", "USA"]));
+//console.log(generateSentence("best fruits", ["Apples", "Bananas"]));
+*/
+
+// Task 9 - Render images
+
+/*
+// Need to complete
+
+const imgs = ["/img1.png", "/img1.png", "/img1.png"];
+
+function renderImg(data) {}
 */
