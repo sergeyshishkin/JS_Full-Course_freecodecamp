@@ -31,7 +31,7 @@ if (age < 6) {
 } else {
   output.textContent = seniorCitizenDiscount;
 }
-
+*/
 // Task 3 - Array practice
 
 let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
@@ -41,9 +41,10 @@ largeCountries.pop();
 largeCountries.push("Pakistan");
 
 for (let i = 0; i < largeCountries.length; i++) {
-  output.textContent += ` ${largeCountries[i]}`;
+  output.innerHTML += `${largeCountries[i]}<br>`;
 }
 
+/*
 // Task 4 - Logical opearators practice
 let dayOfMonth = 13;
 let weekday = "Friday";

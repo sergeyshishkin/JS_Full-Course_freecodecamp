@@ -19,3 +19,30 @@ button {
   color: white;
   font-weight: bold;
 }
+
+button:hover {
+  cursor: pointer;
+  background-color: #8aad75;
+}
+
+#buy-btn {
+  background-color: red;
+}
+
+#buy-btn:hover {
+  background-color: rgb(224, 131, 131);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+a {
+  color: #5f9341;
+}
