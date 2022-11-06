@@ -4,11 +4,18 @@ const inputEl = document.getElementById("input-el");
 const saveBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
+//localStorage.setItem("myLeads", "www.leads.com");
+//let testValue = localStorage.getItem("myLeads");
+//console.log(testValue);
+localStorage.clear();
+
 saveBtn.addEventListener("click", function () {
-  console.log("Click");
   myleads.push(inputEl.value);
   inputEl.value = "";
+  localStorage.setItem("myLeads", JSON.stringify(myleads));
   renderLeads();
+
+  console.log(localStorage.getItem("myLeads"));
 });
 
 function renderLeads() {
