@@ -16,7 +16,7 @@ function render(leads) {
   let listItmes = "";
 
   for (let i = 0; i < leads.length; i++) {
-    listItmes += `<li><a href="http://${leads[i]}" target="_blank">${leads[i]}</a></li>`;
+    listItmes += `<li><a href="${leads[i]}" target="_blank">${leads[i]}</a></li>`;
   }
   ulEl.innerHTML = listItmes;
 }
