@@ -136,9 +136,16 @@ console.log(generateSentence("largest countries", ["China", "India", "USA"]));
 // Task 9 - Render images
 
 /*
-// Need to complete
+const imgCont = document.getElementById("container");
+const imgs = ["/img1.png", "/img2.png", "/img3.png"];
 
-const imgs = ["/img1.png", "/img1.png", "/img1.png"];
+function renderImg(arrImg) {
+  let imgRaw = "";
+  for (let i = 0; i < arrImg.length; i++) {
+    imgRaw += `<img src=${arrImg[i]}>`;
+  }
+  imgCont.innerHTML = imgRaw;
+}
 
-function renderImg(data) {}
+renderImg(imgs);
 */
