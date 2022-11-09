@@ -149,3 +149,25 @@ function renderImg(arrImg) {
 
 renderImg(imgs);
 */
+
+// BELOW SOME PRACTICE FROM VARIOUS COURSES/VIDEOS
+
+let output = document.getElementById("output");
+
+function testSwitch(val) {
+  let answer = {
+    bob: "Marley",
+    42: "The Answer",
+    1: "There is no #1",
+    99: "Missed me by this much!",
+    7: "Ate Nine",
+  };
+
+  if (val in answer) {
+    return answer[val];
+  } else {
+    return "Try another keyword";
+  }
+}
+
+output.textContent = testSwitch(42);
