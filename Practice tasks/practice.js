@@ -152,6 +152,7 @@ renderImg(imgs);
 
 // BELOW SOME PRACTICE FROM VARIOUS COURSES/VIDEOS
 
+/*
 let output = document.getElementById("output");
 
 function testSwitch(val) {
@@ -171,3 +172,64 @@ function testSwitch(val) {
 }
 
 output.textContent = testSwitch(42);
+*/
+
+/// Codewars Kata: Sentence smash
+
+//let arrWords = ["hello"];
+//let arrWords = [];
+//let arrWords = ["hello", "world", "this", "is", "great", "gig", "slam", "rep"];
+
+/*
+function smash(words) {
+  let wordsStr = "";
+
+  switch (words.length) {
+    case 0:
+      break;
+
+    case 1:
+      for (let i = 0; i < words.length; i++) {
+        wordsStr += words[i];
+      }
+      break;
+
+    default:
+      for (let i = 0; i < words.length; i++) {
+        wordsStr += `${words[i]} `;
+      }
+  }
+
+  return wordsStr.trimEnd();
+}
+
+// Other variant:
+
+function smash(words) {
+  "use strict";
+  return words.join(" ").trim();
+}
+
+*/
+
+/// Codewars Kata: Sum array
+
+/*
+//let intArr = [];
+//let intArr = [-2.398];
+//let intArr = [1, 5.2, 4, 0, -1];
+
+// Sum Numbers
+function sum(numbers) {
+  "use strict";
+  let sumArr = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    sumArr += parseFloat(numbers[i]);
+  }
+
+  return sumArr;
+}
+
+console.log(sum(intArr));
+*/
