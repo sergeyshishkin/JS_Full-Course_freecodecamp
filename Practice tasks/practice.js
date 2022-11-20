@@ -233,3 +233,32 @@ function sum(numbers) {
 
 console.log(sum(intArr));
 */
+
+/// Codewars Kata: Square(n) Sum
+
+/*
+
+My solution
+
+function squareSum(numbers) {
+  let arrNum = [];
+  for (let i = 0; i < numbers.length; i++) {
+    arrNum.push(numbers[i] ** 2);
+  }
+
+  let sumArr = arrNum.reduce(function (sum, curr) {
+    return sum + curr;
+  }, 0);
+  return sumArr;
+}
+
+Other guy solution
+
+function squareSum(numbers) {
+  return numbers.reduce(function (sum, n) {
+    return n * n + sum;
+  }, 0);
+}
+
+console.log(squareSum([2, 2, 2]));
+*/
